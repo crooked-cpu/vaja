@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        form { max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], input[type="password"] { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        input[type="submit"] { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+<h2>Order Form</h2>
+    <form id="order-form" method="POST" action="https://formsubmit.co/tsotnejaniashvili@gmail.com">
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+        <!-- Delivery Address -->
+        <label for="address">Delivery Address:</label><br>
+        <textarea id="address" name="address" placeholder="Enter your delivery address" rows="4" required></textarea><br><br>
+
+        <!-- Payment Method -->
+        <label for="payment">Payment Method:</label><br>
+        <select id="payment" name="payment" required>
+            <option value="cash_on_delivery">Cash on Delivery</option>
+            <option value="bank_transfer">Transfer by Bank</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Order">
+    </form>
+
+    <script>
+        document.getElementById('order-form').addEventListener('submit', function(event) {
+            // Simple client-side validation (already required fields)
+            // Additional validation logic can be added here if necessary
+        });
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
